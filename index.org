@@ -1,3 +1,6 @@
+#+TITLE: Welcome
+#+AUTHOR: Ezra Rush
+
 this is a test
 
 * Test Heading
