@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>org-page</title>
+    <link>http://ezrarush.github.oi</link>
+    <description>static site generator</description>
+    <pubDate>Wed, 19 Aug 2015 22:45:02 CDT</pubDate>
+    <lastBuildDate>Wed, 19 Aug 2015 22:45:02 CDT</lastBuildDate>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+  </channel>
+</rss>
