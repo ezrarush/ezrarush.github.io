@@ -3,7 +3,7 @@
 #+EMAIL:       rushwest@gmail.com
 #+DATE:        2015-08-20 Thu
 #+URI:         /blog/%y/%m/%d/first-post
-#+KEYWORDS:    <TODO: insert your keywords here>
+#+KEYWORDS:    First post, welcome
 #+TAGS:        <TODO: insert your tags here>
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
