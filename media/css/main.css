@@ -360,8 +360,9 @@ table th.right, table td.right {
     display: inline;
 }
 
-section {
-    background-color: #FBAED2;
+#disqus_thread > p {
+    background-color: #FFE3F0;
+    box-shadow: 10px 10px #E3FFF2;
 }
 
 /* Responsive
