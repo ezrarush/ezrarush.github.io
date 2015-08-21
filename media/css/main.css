@@ -360,7 +360,7 @@ table th.right, table td.right {
     display: inline;
 }
 
-#disqus_thread > p {
+p {
     background-color: #FFE3F0;
     box-shadow: 10px 10px #E3FFF2;
 }
