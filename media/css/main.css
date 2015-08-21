@@ -360,6 +360,10 @@ table th.right, table td.right {
     display: inline;
 }
 
+section {
+    background-color: #FBAED2;
+}
+
 /* Responsive
    -------------------------------------------------- */
 
