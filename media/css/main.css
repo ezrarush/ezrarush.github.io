@@ -43,8 +43,8 @@ body {
     background-color: #fff;
 }
 p {
-    background-color: #FFE3F0;
-    box-shadow: 10px 10px #E3FFF2;
+/*    background-color: #FFE3F0;
+    box-shadow: 10px 10px #E3FFF2; */
     padding: 3px;    
     margin: 0 0 20px;
 }
@@ -103,11 +103,11 @@ ul, ol {
     padding: 0;
     margin: 0 0 20px;
 }
-ul {
+/*ul {
     background-color: #E4E3FF;
     box-shadow: 10px 10px #FEFFE3;
     padding: 3px;
-}
+}*/
 code, pre {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
