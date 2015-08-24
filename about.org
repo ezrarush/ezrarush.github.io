@@ -3,7 +3,7 @@
 #+EMAIL:       rushwest@gmail.com
 #+DATE:        2015-08-20 Thu
 #+URI:         /about/
-#+KEYWORDS:    About, Ezra Rush
+#+KEYWORDS:    About
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: About Ezra Rush
