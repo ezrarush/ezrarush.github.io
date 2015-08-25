@@ -9,9 +9,3 @@
 #+DESCRIPTION: 
 
 this is a test
-
-* Test Heading
-
-This is test text.
-
-This is more test text.
