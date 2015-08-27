@@ -1,12 +1,12 @@
-#+TITLE:       Welcome
+#+TITLE:       First Post
 #+AUTHOR:      Ezra Rush
 #+EMAIL:       rushwest@gmail.com
 #+DATE:        2015-08-20 Thu
 #+URI:         /blog/%y/%m/%d/first-post
-#+KEYWORDS:    First post, welcome
+#+KEYWORDS:    First post
 #+TAGS:        <TODO: insert your tags here>
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: First post.
 
-First post
+First post.
