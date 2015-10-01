@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Untitled - Ezra&#39;s Blog</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ezra Rush" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/blog/">Ezra&#39;s Blog</a></h1>
+        <p></p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="https://github.com/ezrarush">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="http://www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="ezrarush.github.io">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>Untitled</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Install Ubuntu 15.04</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Programmer's Dorak</a>
+<ul>
+<li><a href="#sec-1-1-1">1.1.1. Fix Right Alt</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-2">1.2. Swap Caps Lock and Control</a></li>
+<li><a href="#sec-1-3">1.3. Get dotfiles</a></li>
+<li><a href="#sec-1-4">1.4. Install Emacs</a></li>
+<li><a href="#sec-1-5">1.5. Install dkms</a></li>
+<li><a href="#sec-1-6">1.6. Install KVM</a></li>
+<li><a href="#sec-1-7">1.7. Install libvirt</a></li>
+<li><a href="#sec-1-8">1.8. Install Ruby</a>
+<ul>
+<li><a href="#sec-1-8-1">1.8.1. From source</a></li>
+<li><a href="#sec-1-8-2">1.8.2. Tell Rubygems not to install the documentation</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-9">1.9. Install Vagrant</a>
+<ul>
+<li><a href="#sec-1-9-1">1.9.1. Install Plugin</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-10">1.10. Install VirtualBox</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Install Ubuntu 15.04</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Programmer's Dorak</h3>
+<div class="outline-text-3" id="text-1-1">
+</div><div id="outline-container-sec-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> Fix Right Alt</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+to remove level3 and return the right alt (right meta) for "English (programmer dvorak)" in xkb do the following:
+</p>
+
+<p>
+edit
+/usr/share/X11/xkb/symbols/us
+</p>
+
+<p>
+find "dvp" variant
+</p>
+
+<p>
+remove the line
+</p>
+
+<p>
+include "level3(ralt<sub>switch</sub>)"
+</p>
+
+<p>
+now clear the pre-compiled keymaps before your modifications work:
+</p>
+
+<p>
+sudo rm *.xkm <i>var/lib/xkb</i>
+</p>
+
+<p>
+reboot or restart (lightd?) 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Swap Caps Lock and Control</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+<a href="http://askubuntu.com/questions/462021/how-do-i-turn-caps-lock-into-an-extra-control-key">http://askubuntu.com/questions/462021/how-do-i-turn-caps-lock-into-an-extra-control-key</a>
+</p>
+
+<p>
+sudo apt-get install gnome-tweak-tool
+Open tweak-tool and click on the typing section in the left column.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Get dotfiles</h3>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Install Emacs</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+sudo apt-get install emacs
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Install dkms</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+sudo apt-get install dkms
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Install KVM</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+<a href="https://help.ubuntu.com/community/KVM/Installation">https://help.ubuntu.com/community/KVM/Installation</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> Install libvirt</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+<a href="https://help.ubuntu.com/lts/serverguide/libvirt.html">https://help.ubuntu.com/lts/serverguide/libvirt.html</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-8" class="outline-3">
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> Install Ruby</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+<a href="https://gorails.com/setup/ubuntu/15.04">https://gorails.com/setup/ubuntu/15.04</a>
+</p>
+</div>
+<div id="outline-container-sec-1-8-1" class="outline-4">
+<h4 id="sec-1-8-1"><span class="section-number-4">1.8.1</span> From source</h4>
+<div class="outline-text-4" id="text-1-8-1">
+<p>
+<a href="http://stackoverflow.com/questions/26947586/installing-rails-with-gem-error-loading-command-install-undefined-method-in">http://stackoverflow.com/questions/26947586/installing-rails-with-gem-error-loading-command-install-undefined-method-in</a>
+</p>
+
+<p>
+sudo apt-get install libssl-dev
+cd
+wget <a href="http://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.2.tar.gz">http://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.2.tar.gz</a>
+tar -xzvf ruby-2.2.2.tar.gz
+cd ruby-2.2.2/
+./configure
+make
+sudo make install
+ruby -v
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-8-2" class="outline-4">
+<h4 id="sec-1-8-2"><span class="section-number-4">1.8.2</span> Tell Rubygems not to install the documentation</h4>
+<div class="outline-text-4" id="text-1-8-2">
+<p>
+echo "gem: &#x2013;no-ri &#x2013;no-rdoc" &gt; ~/.gemrc
+gem install bundler
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-9" class="outline-3">
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> Install Vagrant</h3>
+<div class="outline-text-3" id="text-1-9">
+<p>
+<a href="http://docs.vagrantup.com/v2/installation/index.html">http://docs.vagrantup.com/v2/installation/index.html</a>
+</p>
+</div>
+<div id="outline-container-sec-1-9-1" class="outline-4">
+<h4 id="sec-1-9-1"><span class="section-number-4">1.9.1</span> Install Plugin</h4>
+<div class="outline-text-4" id="text-1-9-1">
+<p>
+<a href="https://github.com/pradels/vagrant-libvirt">https://github.com/pradels/vagrant-libvirt</a>
+</p>
+
+<p>
+vagrant plugin install vagrant-libvirt
+</p>
+
+<p>
+vagrant plugin install vagrant-berkshelf
+vagrant plugin install vagrant-omnibus
+vagrant plugin install vagrant-chef-zero
+vagrant plugin install vagrant-vbguest
+</p>
+
+<p>
+reload shell environment
+</p>
+
+<p>
+source ~/.bashrc
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-10" class="outline-3">
+<h3 id="sec-1-10"><span class="section-number-3">1.10</span> Install VirtualBox</h3>
+<div class="outline-text-3" id="text-1-10">
+<p>
+<a href="https://www.virtualbox.org/wiki/Linux_Downloads">https://www.virtualbox.org/wiki/Linux_Downloads</a>
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2015-10-01</span>
+        <span title="last modification date" class="post-info">2015-10-01</span>
+        <span title="tags" class="post-info">N/A</span>
+        <span title="author" class="post-info">Ezra Rush</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"><p></p></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2015/10/01/untitled/";
+          var disqus_url = "https://ezrarush.github.io/blog/2015/10/01/untitled/";
+          var disqus_shortname = 'blogezrarushcom';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </section>
+      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-66547007-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+      <div class="footer">
+        <p>
+          Copyright &copy;<span id="footerYear"></span> <a href="mailto:rushwest@gmail.com">Ezra Rush</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
