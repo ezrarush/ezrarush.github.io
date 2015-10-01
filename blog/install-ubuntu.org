@@ -1,3 +1,14 @@
+#+TITLE:       Install Ubuntu
+#+AUTHOR:      Ezra Rush
+#+EMAIL:       rushwest@gmail.com
+#+DATE:        2015-08-20 Thu
+#+URI:         /blog/%y/%m/%d/install-ubuntu
+#+KEYWORDS:    Linux
+#+TAGS:        Linux
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Steps To Install Ubuntu With Software
+
 * Install Ubuntu 15.04
 
 ** Programmer's Dorak
