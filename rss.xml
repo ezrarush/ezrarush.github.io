@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
-    <title>Ezra&#39;s Blog</title>
-    <link>https://ezrarush.github.io</link>
-    <description></description>
-    <pubDate>Thu, 01 Oct 2015 21:39:35 CDT</pubDate>
-    <lastBuildDate>Thu, 01 Oct 2015 21:39:35 CDT</lastBuildDate>
+    <title>org-page</title>
+    <link>http://blog.ezrarush.com/</link>
+    <description>static site generator</description>
+    <pubDate>Sun, 10 Jan 2016 15:35:14 CST</pubDate>
+    <lastBuildDate>Sun, 10 Jan 2016 15:35:14 CST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
       <title>Install Ubuntu</title>
-      <link>https://ezrarush.github.io/blog/2015/08/20/install-ubuntu</link>
-      <description>Steps To Install Ubuntu With Software</description>
-      <pubDate>2015-10-01</pubDate>
-      <guid>https://ezrarush.github.io/blog/2015/08/20/install-ubuntu</guid>
+      <link>http://blog.ezrarush.com/blog/2015/08/20/install-ubuntu</link>
+      <description><![CDATA[Steps To Install Ubuntu With Software]]></description>
+      <pubDate>2016-01-10</pubDate>
+      <guid>http://blog.ezrarush.com/blog/2015/08/20/install-ubuntu</guid>
     </item>
     <item>
       <title>First Post</title>
-      <link>https://ezrarush.github.io/blog/2015/08/20/first-post</link>
-      <description>First post.</description>
+      <link>http://blog.ezrarush.com/blog/2015/08/20/first-post</link>
+      <description><![CDATA[First post.]]></description>
       <pubDate>2015-08-27</pubDate>
-      <guid>https://ezrarush.github.io/blog/2015/08/20/first-post</guid>
+      <guid>http://blog.ezrarush.com/blog/2015/08/20/first-post</guid>
     </item>
   </channel>
 </rss>

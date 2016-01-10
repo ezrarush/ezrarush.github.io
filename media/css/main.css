@@ -43,9 +43,6 @@ body {
     background-color: #fff;
 }
 p {
-/*    background-color: #FFE3F0;
-    box-shadow: 10px 10px #E3FFF2; */
-    padding: 3px;    
     margin: 0 0 20px;
 }
 h1, h2, h3 {
@@ -103,11 +100,6 @@ ul, ol {
     padding: 0;
     margin: 0 0 20px;
 }
-/*ul {
-    background-color: #E4E3FF;
-    box-shadow: 10px 10px #FEFFE3;
-    padding: 3px;
-}*/
 code, pre {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
@@ -181,7 +173,6 @@ table th.right, table td.right {
     margin: 0 auto;
     max-width: 770px;
 }
-
 /* head */
 .masthead {
     color: #888;
@@ -301,7 +292,7 @@ table th.right, table td.right {
     color: #ccc;
 }
 
-/* table of content
+/* table of content */
 #table-of-contents {
     position: fixed;
     right: 0em;
@@ -352,7 +343,6 @@ table th.right, table td.right {
     padding: 0.5em;
     margin-top: -1.5em;
 }
-*/
 
 /* footer */
 .footer {
