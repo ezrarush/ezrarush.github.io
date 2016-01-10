@@ -36,6 +36,27 @@ http://askubuntu.com/questions/462021/how-do-i-turn-caps-lock-into-an-extra-cont
 sudo apt-get install gnome-tweak-tool
 Open tweak-tool and click on the typing section in the left column.
 
+** Remap Return to Return on tap; Control on hold.
+
+Install XCAPE
+https://github.com/alols/xcape
+
+
+#+BEGIN_SRC bash
+# ~/.Xmodmap
+clear Control
+clear mod4
+keycode 36 = Hyper_L
+add Control = Hyper_L Control_L Control_R
+add mod4 = Super_L Super_R
+keycode any = Return
+#+END_SRC
+
+#+BEGIN_SRC bash
+xmodmap ~/.Xmodmap
+xcape -e "Hyper_L=Return"
+#+END_SRC
+
 ** Get dotfiles
 ** Install Emacs
 sudo apt-get install emacs
@@ -80,3 +101,14 @@ source ~/.bashrc
 
 ** Install VirtualBox
    https://www.virtualbox.org/wiki/Linux_Downloads
+** Install chefdk
+** Install Packer
+https://www.packer.io/intro/getting-started/setup.html
+
+#+BEGIN_SRC bash
+# ~/.profile:
+
+if [ -d "$HOME/bin" ] ; then
+  PATH="$HOME/bin:$PATH"
+fi
+#+END_SRC
