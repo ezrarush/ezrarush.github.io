@@ -112,3 +112,10 @@ if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
 fi
 #+END_SRC
+
+
+** install System Load Indicator
+** install chef-zero
+sudo apt-get install chef-zero
+** openconnect vpn (cisco)
+
