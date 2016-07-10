@@ -118,4 +118,11 @@ fi
 ** install chef-zero
 sudo apt-get install chef-zero
 ** openconnect vpn (cisco)
+** gogh
+https://github.com/Mayccoll/Gogh
 
+** java
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
+
+** android studio
+https://developer.android.com/studio/install.html
