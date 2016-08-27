@@ -1,0 +1,15 @@
+#+TITLE:       VOIP App
+#+AUTHOR:      Ezra Rush
+#+EMAIL:       rushwest@gmail.com
+#+DATE:        2016-08-27 Sat
+#+URI:         /blog/%y/%m/%d/voip-app
+#+KEYWORDS:    voip android app sip
+#+TAGS:        android
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: programming a voip android app
+
+* references
+http://rtcquickstart.org/guide/multi/index.html
+https://www.resiprocate.org/About_Repro
+https://wiki.asterisk.org/wiki/display/AST/Getting+Started
