@@ -1,0 +1,12 @@
+#+TITLE:       Theory of Constraints
+#+AUTHOR:      Ezra Rush
+#+EMAIL:       rushwest@gmail.com
+#+DATE:        2016-08-31 Wed
+#+URI:         /blog/%y/%m/%d/theory-of-constraints
+#+KEYWORDS:    devops
+#+TAGS:        devops
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Improvement not made at the constraint is an illusion
+
+The Goal : Theory of Constraints Improvement not made at the constraint is an illusion 
