@@ -4,10 +4,31 @@
     <title>org-page</title>
     <link>http://blog.ezrarush.com/</link>
     <description>static site generator</description>
-    <pubDate>Sat, 27 Aug 2016 18:26:13 CDT</pubDate>
-    <lastBuildDate>Sat, 27 Aug 2016 18:26:13 CDT</lastBuildDate>
+    <pubDate>Tue, 25 Oct 2016 19:35:22 CDT</pubDate>
+    <lastBuildDate>Tue, 25 Oct 2016 19:35:22 CDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>App Design: Browser Back Button</title>
+      <link>http://blog.ezrarush.com/blog/2016/10/25/app-design-browser-back-button</link>
+      <description><![CDATA[Why a web app should use the browser's back button]]></description>
+      <pubDate>2016-10-25</pubDate>
+      <guid>http://blog.ezrarush.com/blog/2016/10/25/app-design-browser-back-button</guid>
+    </item>
+    <item>
+      <title>DevOpsDays KC 2016</title>
+      <link>http://blog.ezrarush.com/blog/2016/10/25/devopsdayskc-2016</link>
+      <description><![CDATA[What I learned at DevOpsDays KC]]></description>
+      <pubDate>2016-10-25</pubDate>
+      <guid>http://blog.ezrarush.com/blog/2016/10/25/devopsdayskc-2016</guid>
+    </item>
+    <item>
+      <title>Theory of Constraints</title>
+      <link>http://blog.ezrarush.com/blog/2016/08/31/theory-of-constraints</link>
+      <description><![CDATA[Improvement not made at the constraint is an illusion]]></description>
+      <pubDate>2016-08-31</pubDate>
+      <guid>http://blog.ezrarush.com/blog/2016/08/31/theory-of-constraints</guid>
+    </item>
     <item>
       <title>VOIP App</title>
       <link>http://blog.ezrarush.com/blog/2016/08/27/voip-app</link>

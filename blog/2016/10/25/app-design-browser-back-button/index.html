@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>App Design: Browser Back Button - org-page</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ezra Rush" />
+    <meta name="description" content="Why a web app should use the browser&#39;s back button" />
+    <meta name="keywords" content="app design, rest, http, web app" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">org-page</a></h1>
+        <p>static site generator</p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/kelvinh/org-page">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="http://www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="blog.ezrarush.com">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>App Design: Browser Back Button</h1>
+<p>
+This post attempts to explain why a web app should use the browser’s back button for navigation instead of implementing its own “back” and “cancel” buttons.  The “cancel” button should be used sparingly and only when it makes sense (2).
+</p>
+
+<p>
+Specifying the behavior of “cancel” and “back” buttons for pages that can be accessed from any other page will quickly become complicated and will always be inadequate as a list of navigation paths will not be exhaustive. The Web already handles this complexity by using a design technique called REST. 
+</p>
+
+<blockquote>
+<p>
+The Web is not an application environment, and it usually doesn't have dialog boxes. Instead, the Web is a navigation environment where users move between pages of information. Since hypertext navigation is the dominant user behavior, users have learned to rely on the Back button for getting out of unpleasant situations. Whenever users arrive at pages they don't want, they slam their mouse directly onto the Back button.
+Because Back is such a strong behavior on the Web, it is usually not necessary to offer explicit Cancel buttons. If the user asks for something but doesn't want it, then you can be sure that it's Back button time.
+Offer a Cancel button when users may fear that they have committed to something they want to avoid. Having an explicit way to Cancel provides an extra feeling of safety that is not afforded by simply leaving. (2)
+</p>
+</blockquote>
+
+<p>
+A RESTful service is stateless. Thus “request(s) cannot be dependent on a past request and a service treats each request independently” (3).  This allows important and necessary features including but not limited to: browser back button, browser bookmarking, and browser caching as well as caching at all levels of the network for better performance.
+</p>
+
+<p>
+If a web app is poorly designed, pushing the browser’s refresh and back buttons might result in unwanted outcomes. This might have been the situation in the past and with web apps that do not use the Rails framework which would explain why old school desktop application developers avoid the browser’s back button.  However, Internet users demand that a browser’s back button work and will avoid web apps that do not meet their expectations (1).
+</p>
+
+<p>
+We need everyone (including business analysts, programmers, and testers) to understand and follow a unified design based on how web apps and the Internet work - namely, HTTP’s RESTful style. 
+</p>
+
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1">References</h2>
+<div class="outline-text-2" id="text-orgheadline1">
+<p>
+(1)    User’s back-button expectations
+</p>
+
+<p>
+<a href="http://baymard.com/blog/back-button-expectations">http://baymard.com/blog/back-button-expectations</a>
+</p>
+
+<p>
+(2)    An argument against reset and cancel buttons
+</p>
+
+<p>
+<a href="http://www.nngroup.com/articles/reset-and-cancel-buttons/">http://www.nngroup.com/articles/reset-and-cancel-buttons/</a>
+</p>
+
+<p>
+(3)    RESTful Web Services: A Tutorial
+</p>
+
+<p>
+<a href="http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069">http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069</a>
+</p>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2016-10-25</span>
+        <span title="last modification date" class="post-info">2016-10-25</span>
+        <span title="tags" class="post-info"><a href="/tags/app-design/">app design</a></span>
+        <span title="author" class="post-info">Ezra Rush</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2016/10/25/app-design-browser-back-button";
+          var disqus_url = "http://blog.ezrarush.com/blog/2016/10/25/app-design-browser-back-button";
+          var disqus_shortname = '';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </section>
+      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.x (<a href="http://orgmode.org">Org mode</a> 8.x)</p>
+        <p>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:rushwest &lt;at&gt; gmail &lt;dot&gt; com">Ezra Rush</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
