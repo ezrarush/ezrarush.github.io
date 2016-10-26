@@ -1,0 +1,39 @@
+#+TITLE:       App Design: Browser Back Button
+#+AUTHOR:      Ezra Rush
+#+EMAIL:       rushwest@gmail.com
+#+DATE:        2016-10-25 Tue
+#+URI:         /blog/%y/%m/%d/app-design-browser-back-button
+#+KEYWORDS:    app design, rest, http, web app
+#+TAGS:        app design
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Why a web app should use the browser's back button
+This post attempts to explain why a web app should use the browser’s back button for navigation instead of implementing its own “back” and “cancel” buttons.  The “cancel” button should be used sparingly and only when it makes sense (2).
+
+Specifying the behavior of “cancel” and “back” buttons for pages that can be accessed from any other page will quickly become complicated and will always be inadequate as a list of navigation paths will not be exhaustive. The Web already handles this complexity by using a design technique called REST. 
+
+#+BEGIN_QUOTE
+The Web is not an application environment, and it usually doesn't have dialog boxes. Instead, the Web is a navigation environment where users move between pages of information. Since hypertext navigation is the dominant user behavior, users have learned to rely on the Back button for getting out of unpleasant situations. Whenever users arrive at pages they don't want, they slam their mouse directly onto the Back button.
+Because Back is such a strong behavior on the Web, it is usually not necessary to offer explicit Cancel buttons. If the user asks for something but doesn't want it, then you can be sure that it's Back button time.
+Offer a Cancel button when users may fear that they have committed to something they want to avoid. Having an explicit way to Cancel provides an extra feeling of safety that is not afforded by simply leaving. (2)
+#+END_QUOTE
+
+A RESTful service is stateless. Thus “request(s) cannot be dependent on a past request and a service treats each request independently” (3).  This allows important and necessary features including but not limited to: browser back button, browser bookmarking, and browser caching as well as caching at all levels of the network for better performance.
+
+If a web app is poorly designed, pushing the browser’s refresh and back buttons might result in unwanted outcomes. This might have been the situation in the past and with web apps that do not use the Rails framework which would explain why old school desktop application developers avoid the browser’s back button.  However, Internet users demand that a browser’s back button work and will avoid web apps that do not meet their expectations (1).
+
+We need everyone (including business analysts, programmers, and testers) to understand and follow a unified design based on how web apps and the Internet work - namely, HTTP’s RESTful style. 
+
+* References
+
+(1)    User’s back-button expectations
+
+http://baymard.com/blog/back-button-expectations
+
+(2)    An argument against reset and cancel buttons
+
+http://www.nngroup.com/articles/reset-and-cancel-buttons/
+
+(3)    RESTful Web Services: A Tutorial
+
+http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069

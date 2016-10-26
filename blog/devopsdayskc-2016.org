@@ -1,0 +1,67 @@
+#+TITLE:       DevOpsDays KC 2016
+#+AUTHOR:      Ezra Rush
+#+EMAIL:       rushwest@gmail.com
+#+DATE:        2016-10-25 Tue
+#+URI:         /blog/%y/%m/%d/devopsdayskc-2016
+#+KEYWORDS:    devops, conference
+#+TAGS:        devops
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: What I learned at DevOpsDays KC
+* General 
+* Day  One
+** Talk One
+Don't forget middle managers
+Cannot change culture- can influence it
+** Talk Two
+[[http://martinfowler.com/bliki/ImmutableServer.html] [Martin Fowler - immutable server state]]
+** Talk Three
+you want to be cocky, you want to know the thing will work
+human factors engineering - science based view on humans process info
+** Talk Four
+openstack
+*** why is networking an after thought
+*** why containers?
+lightweight - increased density - portable
+kubernetes - replaces docker (used by google, ebay) 
+mesosphere
+kuryr
+midokura
+midonet
+
+when deploying to production consider security and networking
+
+north - south / east - west flows
+
+*** security
+kuryr leverages neutron by the remote driver
+* Day Two
+** Talk One
+** Talk Two
+** Talk Three
+stop feeding blood to the machines
+** Talk Four
+* Terms
+** System Thinking
+https://en.wikipedia.org/wiki/Systems_thinking
+** Pomodoro Technique
+https://en.wikipedia.org/wiki/Pomodoro_Technique
+** Bumblebee
+http://www.urbandictionary.com/define.php?term=bumblebee
+* To Do
+** Developer King
+Disclaimer: I am not talking about business leadership or the leader of an organization but IT leadership.
+My own personal idea that devops can automate leadership out of existence allowing coders/doers to become what i call "Dev Kings", a modern take on the philosopher kings. Coders must become leaders or those now called leaders must code.  
+Imagine all members of an organization actually producing work (i.e. committing code into the repo).
+*** The Phoenix Project
+**** Devops allowed leadership to become self obsolete 
+the protagonist, a prominent member of leadership, eventually become "bored", did not know who to stand behind with arms folded anymore, was "offered the kingdom and flew away on a spaceship". 
+**** Brent the hero
+the protagonist had to use Brent and other workers to solve all his problems. What do those workers get from the protagonist in turn? Protection from other leaders and outsiders? Why can't devops as a process give Brent and other hero the ability to protect themselves?
+**** Join the party and other perks
+*** Cross-Pollinate 
+have the workers taste leadership
+*** Hero Vs Leader 
+Maybe both are bad for the organization and the individual, thus both need to be "managed" out of power. I asked what is the difference between a hero and a leader? the answer was, heroes empower themselves while leaders empower others. Devops can give heroes the tools to empower others. 
+*** Hero Vs Wizard
+wip
